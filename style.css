@@ -1,21 +1,23 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 /* Общие стили для шапки */
-body { 
+body {
   font-family: 'Forum', cursive;
   color: #777;
   background-color: #fff;
 }
- 
+
 /* Флекс контейнер для верхних инфо-блоков */
- .top-header {
+.top-header {
   display: flex;
   justify-content: space-around;
   padding: 5px;
   font-size: 100%;
   border-bottom: 1px solid #efd0d0;
   position: relative;
- }
+}
 
 /* .top-header .icon {
   display: none;
@@ -36,7 +38,7 @@ header {
   justify-content: space-around;
   padding: 5px;
   border-bottom: 5px solid #b2db41;
- }
+}
 
 /* Стили для всех ссылок внутри флекс контейнера */
 header a {
@@ -52,7 +54,7 @@ header a {
 /* Ширина дочернего блока под логотип */
 .wrap-logo {
   width: 30%;
- }
+}
 
 /* Стилизация логотипа */
 .wrap-logo #logo {
@@ -63,7 +65,7 @@ header a {
 
 /* Зеленый цвет у части логотипа */
 .wrap-logo span {
-	color: #b2db41;
+  color: #b2db41;
 }
 
 /* Навигационный одновременно дочерний/родитель блок */
@@ -72,10 +74,10 @@ nav {
   justify-content: center;
   width: 70%;
   font-family: 'Roboto Slab', serif;
- }
+}
 
- /* Стили для навигационных ссылок при наведении */ 
- nav a:hover {
+/* Стили для навигационных ссылок при наведении */
+nav a:hover {
   background-color: #c5e56e;
   color: #212121;
 }
@@ -90,10 +92,12 @@ nav a.active {
 /* Дочерний блок меню */
 nav .menu {
   display: flex;
-  justify-content: center; /* Выравнивает по горизонтальной оси */
+  justify-content: center;
+  /* Выравнивает по горизонтальной оси */
   width: 85%;
-  align-items: center; /* Выравнивает по вертикальной оси */
- }
+  align-items: center;
+  /* Выравнивает по вертикальной оси */
+}
 
 /* Дочерний блок меню с выбором языка */
 nav .lang-menu {
@@ -110,36 +114,38 @@ nav .lang-menu a {
   font-size: 90%;
   font-weight: bold;
   text-transform: uppercase;
- }
- 
+}
+
 /* Две косые зеленые линии перед ссылками-языками */
- nav .lang-menu a:first-child:before {
+nav .lang-menu a:first-child:before {
   content: "\005C\005C";
   color: #c5e56e;
   font-size: 90%;
   position: relative;
   right: 20px;
- } 
- 
- /* Контейнер для выпадающего меню */
+}
+
+/* Контейнер для выпадающего меню */
 .dropdown {
   overflow: hidden;
 }
 
 /* Кнопка для выпадающего меню */
 .dropdown .dropbtn {
-  font-size: 100%; 
+  font-size: 100%;
   border: none;
   outline: none;
   color: #212121;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Унаследует от родителя */
+  font-family: inherit;
+  /* Унаследует от родителя */
   margin: 0;
 }
 
 /* Цвет фона у ссылок выпадающего меню */
-.dropdown a:hover, .dropdown:hover .dropbtn {
+.dropdown a:hover,
+.dropdown:hover .dropbtn {
   background-color: #c5e56e;
   border-radius: 4px;
 }
@@ -150,7 +156,7 @@ nav .lang-menu a {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -164,7 +170,7 @@ nav .lang-menu a {
 }
 
 /* Цвет фона при наведении на выпадающий блок */
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
   background-color: #c5e56e;
 }
 
@@ -175,36 +181,39 @@ nav .lang-menu a {
 
 /* На ширине меньше 1000px меняем стили для адаптивности */
 @media screen and (max-width: 1000px) {
-/*    .top-header .icon {
+
+  /*    .top-header .icon {
 	  display: block;
-} */	
-   .top-header {
+} */
+  .top-header {
     flex-direction: column;
-    }
-    p {
-	 margin: 0 5px;
-    }
-    header {
-	   flex-direction: column;
-    }
-    nav {
-	   flex-flow: column-reverse;
-       	 align-items: flex-end;  
-	}
-    nav .menu {
-	   flex-direction: column;
-	   align-items: flex-start;
-	   position: relative;
-	}
-	.dropdown-content {
-		position: absolute;
-        left: 102px;
-        top: -38px;
-	}
+  }
+
+  p {
+    margin: 0 5px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-flow: column-reverse;
+    align-items: flex-end;
+  }
+
+  nav .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    left: 102px;
+    top: -38px;
+  }
 }
-
-
-
 
 
 
