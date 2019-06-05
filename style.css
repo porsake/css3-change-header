@@ -1,260 +1,256 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
 }
 
 /* Общие стили для шапки */
 body {
-  font-family: 'Forum', cursive;
-  color: #777;
-  background-color: #fff;
+font-family: 'Forum', cursive;
+color: #777;
+background-color: #fff;
 }
 
 /* Флекс контейнер для верхних инфо-блоков */
 .top-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding: 5px;
-  font-size: 100%;
-  border-bottom: 1px solid #efd0d0;
-  position: relative;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+padding: 5px;
+font-size: 100%;
+border-bottom: 1px solid #efd0d0;
+position: relative;
 }
 
 /* .top-header .icon {
-  display: none;
-  position: absolute;
-  top: 19px;
-  right: 36px;
+display: none;
+position: absolute;
+top: 19px;
+right: 36px;
 } */
 
 /* Зеленый цвет у текста инфо-блоков */
 .top-header .green {
-  color: #b2db41;
-  font-weight: bold;
+color: #b2db41;
+font-weight: bold;
 }
 
 /* Флекс контейнер для шапки */
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding: 5px;
-  border-bottom: 5px solid #b2db41;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+padding: 5px;
+border-bottom: 5px solid #b2db41;
 }
 
 /* Стили для всех ссылок внутри флекс контейнера */
 header a {
-  display: block;
-  color: #212121;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 100%;
-  text-shadow: 0 1px 0 #fff;
-  border-radius: 4px;
+display: block;
+color: #212121;
+padding: 12px;
+text-decoration: none;
+font-size: 100%;
+text-shadow: 0 1px 0 #fff;
+border-radius: 4px;
 }
 
 /* Ширина дочернего блока под логотип */
 .wrap-logo {
-  width: 30%;
+width: 30%;
 }
 
 /* Стилизация логотипа */
 .wrap-logo #logo {
-  font-family: 'Roboto Slab', serif;
-  font-size: 200%;
-  font-weight: bold;
+font-family: 'Roboto Slab', serif;
+font-size: 200%;
+font-weight: bold;
 }
 
 /* Зеленый цвет у части логотипа */
 .wrap-logo span {
-  color: #b2db41;
+color: #b2db41;
 }
 
 /* Навигационный одновременно дочерний/родитель блок */
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 70%;
-  font-family: 'Roboto Slab', serif;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+width: 70%;
+font-family: 'Roboto Slab', serif;
 }
 
 /* Стили для навигационных ссылок при наведении */
 nav a:hover {
-  background-color: #c5e56e;
-  color: #212121;
+background-color: #c5e56e;
+color: #212121;
 }
 
 /* Активная ссылка у меню навигации */
 nav a.active {
-  background-color: #c5e56e;
-  color: #212121;
-  border-radius: 4px;
+background-color: #c5e56e;
+color: #212121;
+border-radius: 4px;
 }
 
 /* Дочерний блок меню */
 nav .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* Выравнивает по горизонтальной оси */
-  width: 85%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* Выравнивает по вертикальной оси */
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+/* Выравнивает по горизонтальной оси */
+width: 85%;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+/* Выравнивает по вертикальной оси */
 }
 
 /* Дочерний блок меню с выбором языка */
 nav .lang-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 15%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: start;
+-ms-flex-pack: start;
+justify-content: flex-start;
+width: 15%;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
 }
 
 /* Ссылки языкового меню */
 nav .lang-menu a {
-  padding: 4px;
-  color: #000;
-  font-size: 90%;
-  font-weight: bold;
-  text-transform: uppercase;
+padding: 4px;
+color: #000;
+font-size: 90%;
+font-weight: bold;
+text-transform: uppercase;
 }
 
 /* Две косые зеленые линии перед ссылками-языками */
 nav .lang-menu a:first-child:before {
-  content: "\005C\005C";
-  color: #c5e56e;
-  font-size: 90%;
-  position: relative;
-  right: 20px;
+content: "\005C\005C";
+color: #c5e56e;
+font-size: 90%;
+position: relative;
+right: 20px;
 }
 
 /* Контейнер для выпадающего меню */
 .dropdown {
-  overflow: hidden;
+overflow: hidden;
 }
 
 /* Кнопка для выпадающего меню */
 .dropdown .dropbtn {
-  font-size: 100%;
-  border: none;
-  outline: none;
-  color: #212121;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  /* Унаследует от родителя */
-  margin: 0;
+font-size: 100%;
+border: none;
+outline: none;
+color: #212121;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+/* Унаследует от родителя */
+margin: 0;
 }
 
 /* Цвет фона у ссылок выпадающего меню */
 .dropdown a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #c5e56e;
-  border-radius: 4px;
+background-color: #c5e56e;
+border-radius: 4px;
 }
 
 /* Выпадающий блок с ссылками (скрыт по умолчанию) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+-webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
 }
 
 /* Ссылки внутри выпадающего блока */
 .dropdown-content a {
-  color: #212121;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+color: #212121;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
 }
 
 /* Цвет фона при наведении на выпадающий блок */
 .dropdown-content a:hover {
-  background-color: #c5e56e;
+background-color: #c5e56e;
 }
 
 /* При наведении на кнопку показать выпадающее меню */
 .dropdown:hover .dropdown-content {
-  display: block;
+display: block;
 }
 
 /* На ширине меньше 1000px меняем стили для адаптивности */
 @media screen and (max-width: 1000px) {
 
-  /*    .top-header .icon {
-	  display: block;
+/* .top-header .icon {
+display: block;
 } */
-  .top-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  p {
-    margin: 0 5px;
-  }
-
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse;
-            flex-flow: column-reverse;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-
-  nav .menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    position: relative;
-  }
-
-  .dropdown-content {
-    position: absolute;
-    left: 102px;
-    top: -38px;
-  }
+.top-header {
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
 }
 
+p {
+margin: 0 5px;
+}
 
+header {
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+}
 
+nav {
+-webkit-box-orient: vertical;
+-webkit-box-direction: reverse;
+-ms-flex-flow: column-reverse;
+flex-flow: column-reverse;
+-webkit-box-align: end;
+-ms-flex-align: end;
+align-items: flex-end;
+}
 
+nav .menu {
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: start;
+-ms-flex-align: start;
+align-items: flex-start;
+position: relative;
+}
+
+.dropdown-content {
+position: absolute;
+left: 102px;
+top: -38px;
+}
+}
